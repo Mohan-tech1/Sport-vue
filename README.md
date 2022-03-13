@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # sportsstore
 
 ## Project setup
@@ -22,3 +23,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# Sport-vue
+>>>>>>> c73ae459f4a2b1e51e6faf53d9d9d5dddf88ced6
