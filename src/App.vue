@@ -1,17 +1,24 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <StoreProduct />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import StoreProduct from "./components/StoreProduct.vue";
+import { mapActions } from "vuex";
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    StoreProduct,
+  },
+  methods: {
+    ...mapActions(["getData"]),
+  },
+  created() {
+    this.getData();
+  },
+};
 </script>
 
 <style>
